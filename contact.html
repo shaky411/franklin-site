@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c835f09f38.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+
+
+<!-- Main Body (Global) -->
+<body class="bg-white">
+
+    <!-- Header containing logo and nav -->
+    <header>
+        <!-- This will be the navbar -->
+        <nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 px-4 text-lg text-slate-500 bg-horizon-800 shadow">
+            <div class="border-2 rounded border-slate-500 m-4">
+                <a href="index.html"><h1 class="p-2 text-slate-500">Franklin</h1></a>
+            </div>
+
+            <div class="m-4 md:hidden">
+                <i id="menu-button" class="fa-solid fa-bars text-2xl cursor-pointer text-slate-500"></i>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    <!-- this is the main contaent -->
+    <main class="flex justify-center m-10">
+        
+        
+
+        <!-- card components -->
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <div class="flex flex-col justify-center items-center mt-4 text-center w-1/2 md:mr-10 md:w-1/3">
+            <img class="w-80 md:w-96" src="./assets/undraw_Mail_re_duel.png" alt="">
+          <h1 class="text-slate-500">Would you like to find out more about the services we offer? Please send us a message and we will do our best to repsond asap.</h1>
+        </div>
+          <div class="flex flex-col justify-center border shadow-lg rounded-xl bg-horizon-800 w-auto items-center m-6 p-6">
+            <h2 class="text-center text-slate-200 text-lg">Send us a message!</h2>
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              class="flex flex-col items-center justify-center m-2"
+            >
+              <input
+                class="bg-white placeholder:text-gray-300 m-2 p-2 rounded shadow-inner border"
+                type="text"
+                placeholder="Full Name"
+                name="user_name"
+                required
+              />
+              <input
+                class="bg-white placeholder:text-gray-300 m-2 p-2 rounded shadow-inner border"
+                type="email"
+                placeholder="Email"
+                name="user_email"
+                required
+              />
+              <input
+                class="bg-white placeholder:text-gray-300 m-2 p-2 rounded shadow-inner border"
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="add message here..."
+                cols="30"
+                rows="10"
+                class="bg-white placeholder:text-gray-300 m-2 p-2 rounded-xl shadow-inner border"
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-cyan-500 hover:bg-pink-500 p-2 text-white rounded-lg hover:shadow-md mt-2 transition-colors-shadow duration-700"
+              >
+                Send Message
+              </button>
+            </form>
+            
+    </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t fixed bottom-0 flex mb-auto items-center justify-center bg-white text-slate-500 py-4 mt-2">Wintec Solutions Limited &copy</footer>
+    
+    
+    <script src="/script.js"></script>
+</body>
+</html>
