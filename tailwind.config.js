@@ -3,6 +3,9 @@ module.exports = {
   content: ["./*.html"],
   theme: {
     extend: {
+      fontFamily: {
+        noticia: ['Noticia Text', 'serif']
+      },
       colors: {
         apricot: {
           50: "#fdf6ef",
